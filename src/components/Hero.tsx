@@ -115,16 +115,26 @@ export const Hero = ({ onRecommendationsUpdate }: HeroProps) => {
               </div>
             </div>
 
-            <Button
-              variant="hero"
-              size="lg"
-              className="w-full text-lg"
-              onClick={handleGetRecommendations}
-              disabled={!soilType || !season}
-            >
-              Get Recommendations
-              <ChevronDown className="ml-2 h-5 w-5" />
-            </Button>
+            <div className="grid md:grid-cols-2 gap-4 mt-6">
+              <Button
+                variant="hero"
+                size="lg"
+                className="w-full text-lg"
+                onClick={handleGetRecommendations}
+                disabled={!soilType || !season}
+              >
+                Get Recommendations
+                <ChevronDown className="ml-2 h-5 w-5" />
+              </Button>
+              <Button
+                variant="outline"
+                size="lg"
+                className="w-full text-lg bg-background text-foreground hover:bg-muted"
+                onClick={() => window.location.href = '/optimization'}
+              >
+                AI Farm Optimization (New)
+              </Button>
+            </div>
           </Card>
         </div>
       </div>

@@ -10,7 +10,7 @@ import { ArrowLeft, Wheat, Apple, Carrot, Leaf, Sprout, FlowerIcon, Cherry, Citr
 import { useNavigate } from "react-router-dom";
 
 const getIconForCrop = (cropName: string) => {
-  const iconMap: { [key: string]: any } = {
+  const iconMap: Record<string, React.ElementType> = {
     'Wheat': Wheat, 'Tomatoes': Apple, 'Chillies': Apple, 'Onions': Apple, 'Potatoes': Carrot,
     'Brinjal': Apple, 'Mango': Apple, 'Banana': Banana, 'Papaya': Apple, 'Guava': Apple,
     'Sweet Orange': Citrus, 'Pomegranate': Apple, 'Grapes': Grape, 'Sapota': Apple,

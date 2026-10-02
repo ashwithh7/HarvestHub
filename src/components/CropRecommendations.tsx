@@ -3287,7 +3287,7 @@ interface CropRecommendationsProps {
   soilType?: string;
   location?: string;
   season?: string;
-  onCropSelect?: (cropData: any) => void;
+  onCropSelect?: (cropData: unknown) => void;
 }
 
 export const CropRecommendations = ({ soilType, location, season, onCropSelect }: CropRecommendationsProps) => {
